@@ -2,8 +2,8 @@
 
 This repo contains my configuration files for Bash and other CLI tools. It forms part of my larger macOS setup which consists of:
 
-- **dawn**: a script that walks you through the process of setting up a newly-installed copy of macOS from scratch
-- **toolbox**: miscellaneous shell scripts that perform various functions (some of questionable utility)
+- **[dawn](https://github.com/stringlytyped/dawn)**: a script that walks you through the process of setting up a newly-installed copy of macOS from scratch
+- **[toolbox](https://github.com/stringlytyped/toolbox)**: miscellaneous shell scripts that perform various functions (some of questionable utility)
 - **dotfiles** (this repo): shell preferences, including useful aliases for common tasks
 
 ## How to use
@@ -24,7 +24,17 @@ This will symlink the dotfiles in your home directory.
 
 (If you make changes to the dotfiles later, you can use the `reload` alias to have them take effect.)
 
-## Prerequisites 
+## Prerequisites
+
+Provided you have [Homebrew](https://brew.sh/) installed, the install script will check for and automatically install (after prompting you) these dependencies:
+
+- GNU Coreutils
+- [Weather](https://github.com/genuinetools/weather)
+- [Hub](https://github.com/github/hub)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Sourcetree](https://www.sourcetreeapp.com/)
+
+To fully utilize all functionality, you may want to install [powerline](https://github.com/powerline/powerline), but there is no requirement to do so.
 
 ## Note about basic Unix commands
 
@@ -66,4 +76,4 @@ Sure! If you notice anything broken, you you'd like to see an improvement, pleas
 
 ### What is purpose of comments starting with "shellcheck"?
 
-I use a tool called [shellcheck](https://github.com/koalaman/shellcheck) to enforce good practices in my shell scripts. However, every once in a while it will generate a warning that needs to be overwritten. The `shellcheck` comments accomplish this.
+I use a tool called [shellcheck](https://github.com/koalaman/shellcheck) to enforce good practices in my shell scripts. However, every once in a while it will generate a warning that needs to be overridden. The `shellcheck` comments accomplish this.
